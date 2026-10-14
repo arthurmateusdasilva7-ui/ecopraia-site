@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Junte-se a nós | EcoPraia</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/a4aacfeb56.js"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="imgpraia">
+        
+    <div class="menu">
+        <h1 class="titulo">EcoPraia <i class="fa-solid fa-sun" style="color: rgb(233, 255, 30);"></i></h1>
+
+        <p class="sub"><strong>FAÇA A DIFERENÇA! NOS AJUDE A SALVAR O PLANETA.</strong> 
+        </p>
+    </div>
+<br>
+    
+</header>
+<nav class="topnav">
+    <a href="index.html">Início</a>
+    <a href="descarte.html">Pontos de descarte</a>
+    <a href="ajude.html" class="ativa">Junte-se a nós</a>
+    </nav>
+    <main>
+        <section id="info-voluntariado">
+            <h2>SEJA A MUDANÇA QUE A NOSSA PRAIA PRECISA!</h2>
+            <p>O lixo nas praias não é apenas um problema
+            ambiental: é um desafio coletivo que exige consciência,
+            participação e responsabilidade. O EcoPraia quer
+            incentivar a comunidade a fazer parte dessa mudança
+            por meio de ações voluntárias de limpeza e preservação
+            da orla do Janga. Você não precisa ser especialista em
+            meio ambiente. Basta ter vontade de contribuir, respeitar
+            a natureza e acreditar que pequenas atitudes podem gerar
+            grandes resultados.</p>
+            <img src="recicladores.jpg" 
+            alt="Imagem de recicladores voluntários limpando uma praia"
+            
+            class="revelar">
+            
+            <h3>Voluntarie-se para limpar a orla</h3>
+            <p>Seja a mudança que o oceano precisa!
+            Inscreva-se como voluntário e junte-se a 
+            nós na missão de transformar nossas praias 
+            em lugares mais limpos e cheios de vida. 
+            Cada mão que ajuda faz a diferença</p>
+        </section>
+
+<!--ALGUÉM BOTA ESSE FORMULÁRIO DENTRO DE UMA CAIXA BRANCA, PFV--> 
+<section id="inscricao">
+    <h2>Inscrição</h2>
+    <div class="container">
+    <form id="inscricao-voluntariado">
+
+        <!-- NOME COMPLETO -->
+        <label for="nome">Nome completo</label><br>
+        <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Insira seu nome completo"
+            required
+        ><br><br>
+
+        <!-- E-MAIL -->
+        <label for="email">E-mail</label><br>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Ex: ecopraia@gmail.com"
+            required
+        ><br><br>
+
+        <!-- TELEFONE -->
+        <label for="telefone">Telefone ou WhatsApp</label><br>
+        <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(81) 99999-9999"
+        ><br><br>
+
+        <!-- FAIXA ETÁRIA -->
+        <label for="idade">Faixa etária</label><br>
+        <select
+            id="idade"
+            name="idade"
+            required
+        >
+            <option value="">Selecione</option>
+            <option value="menor-18">
+                Menos de 18 anos
+            </option>
+            <option value="18-29">
+                18 a 29 anos
+            </option>
+            <option value="30-mais">
+                30 anos ou mais
+            </option>
+        </select><br><br>
+
+        <!-- BAIRRO -->
+        <label for="bairro">Bairro onde mora</label><br>
+        <input
+            type="text"
+            id="bairro"
+            name="bairro"
+            placeholder="Ex: Janga"
+            required
+        ><br><br>
+
+        <!-- DISPONIBILIDADE -->
+        <label for="disponibilidade">
+            Disponibilidade para participar
+        </label><br>
+        <select
+            id="disponibilidade"
+            name="disponibilidade"
+            required
+        >
+            <option value="">Selecione</option>
+            <option value="dias-uteis">
+                Dias úteis
+            </option>
+            <option value="fins-de-semana">
+                Fins de semana
+            </option>
+            <option value="ambos">
+                Dias úteis e fins de semana
+            </option>
+        </select><br><br>
+
+        <!-- EXPERIÊNCIA -->
+        <label for="experiencia">
+            Já participou de ações ambientais?
+        </label><br>
+        <select
+            id="experiencia"
+            name="experiencia"
+            required
+        >
+            <option value="">Selecione</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não, será minha primeira vez</option>
+        </select><br><br>
+
+        <!-- BOTÃO DE ENVIO -->
+        <button type="submit">
+            Quero ser voluntário!
+        </button>
+    </div>
+    </form>
+</section>
+ <footer class="footer">
+    <p>&copy; 2026 EcoPraia | Preserve nossas praias</p>
+    <p>@Projeto Florescendo Talentos 2026. </p>
+</footer>
+             
+    </main>
+</body>
+</html>

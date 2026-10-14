@@ -1,0 +1,172 @@
+.imgpraia .titulo {
+    color: rgb(255, 255, 255);
+    margin: 10px 0 0;
+    font-family: "Anton", Impact, sans-serif;
+    text-align: center;
+    font-size: clamp(5rem, 16vw, 11rem);
+    line-height: 1;
+    -webkit-text-stroke: 2px #000;
+    paint-order: stroke fill;
+}
+
+/* SE ALGUEM SOUBER DIMINUIR ESSA PORRA DE SOL, FAZ O FAVOR AE */
+.imgpraia .titulo i {
+    font-size: 0.4em;
+    vertical-align: top;
+    margin-left: 0.05em;
+    -webkit-text-stroke: 0;
+}
+
+.imgpraia .sub {
+    color: #08085c;
+    font-family: "Bebas Neue", Impact, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0.02em;
+    margin: 0;
+    padding: 0 8px;
+    text-shadow: 1px 1px 0 #58b5fd, 
+    2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.imgpraia .sub strong {
+    font-weight: 400;
+}
+
+/* TENTEM DEIXAR ESSA NAVBAR GRUDADA NO TOPO
+   DA TELA AO SCROLLAR PRA BAIXO, TIPO O DISPLAY STICKY */
+.topnav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: min(100%, 600px);
+  margin: 6px auto 0;
+  padding: 8px 16px;
+   position: sticky;
+  top: 0;            
+  z-index: 1000; 
+  margin-top: -299px;
+  margin-bottom: 299px;
+  background: transparent;
+}
+
+ .topnav a {
+  font-family: "Bebas Neue", Impact, sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #0f0f0f;
+  padding: 4px 8px;
+  border-radius: 50px;
+   background-color: rgba(255, 255, 255, 0.5);
+}
+.topnav a:hover {
+background-color: #2a5cb8;
+color: white;
+}
+
+
+.imgpraia .topnav a {
+position: relative;
+}
+
+.imgpraia .topnav a::after {
+content: "";
+position: absolute;
+bottom: 1px;
+left: 50%;
+
+width: 0;
+height: 3px;
+background-color: #0e8fa8;
+border-radius: 10px;
+
+transform: translateX(-50%);
+transition: width 0.3s ease;
+
+}
+
+.imgpraia .topnav a\:hover::after {
+width: 60%;
+}
+
+.imgpraia .topnav a.ativa::after {
+width: 60%;
+}
+
+
+/* POR TUDO QUE É MAIS SAGRADO, NAO MEXE NESSA BOSTA */
+.imgpraia {
+      width: 100%;
+    margin: 0px;
+ min-height: 80vh; 
+    background-image: url("praia.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     display: flow-root;
+}
+
+body {
+    margin: 0;
+    background-color: #316bd6;
+}
+
+/* SE ACHAREM UMA COR MELHOR PROS LINK, MUDA TBM OBS: PRETO FICA HORRIVEL */
+.link, main a {
+    color: #3700ff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    
+}
+
+.link:hover, main a:hover {
+    color: #3700ff;
+}
+
+main {
+    counter-reset: secao;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+}
+
+.revelar {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 5s ease-out, transform 3s ease-out;
+}
+
+.revelar.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #316bd6;
+}
+main {
+ background-color: rgba(255, 255, 255, 0.6); 
+  border-radius: 15px;       
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); 
+}
+
+main p {
+      font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;        
+  color: #1f2d3c;
+  text-align: justify;
+}
+
+main h1, main h2 {
+  font-family:  "Segoe UI", Arial, sans-serif;
+  color: #0e8fa8;
+  margin-top: 30px;
+  margin-bottom: 15px;
+   border-bottom: 3px solid #2a5cb8;
+}
